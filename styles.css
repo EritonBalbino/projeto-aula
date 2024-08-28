@@ -1,0 +1,140 @@
+/* reset basico do CSS do navegador */
+* {
+    /* ajuste a margem da pagina */
+    margin: 0;
+    /* espaçamento interno */
+    padding: 0;
+
+    /* tamanho do box */
+    box-sizing: border-box;
+}
+
+/* com tag html */
+body {
+    /* familia de fontes para a pagina */
+    font-family: 'roboto', sans-serif;
+    /* altura da linha */
+    line-height: 1.6;
+    /* cor rgb, digitar ou usar hexadecimal*/
+    color: #333;
+}
+
+.cabecalho-section {
+    /* imagem de fundo */
+    background: url('car-wash.webp') no-repeat center/cover;
+    /* altura viewport*/
+    height: 100vh;
+    /* criar layout personalizados e flexiveis */
+    display: flex;
+    /* justificar o conteudo: horizontal */
+    justify-content: center;
+    /* justificar o conteudo: vertical */
+    align-items: center;
+    /* alinhamento de texto: alinhamento */
+    text-align: center;
+    /* cor */
+    color: #fff;
+}
+
+/* configurando header */
+header {
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+}
+
+header h1 {
+    /* tamanho fonte em relação ao padrão */
+    font-size: 4rem;
+    /* sombra de texto */
+    text-shadow: 4px 4px 8px rgb(0, 0, 0, 0.8);
+}
+
+header p {
+    font-size: 2.5rem;
+    /* Margem: Superior (Top), inferior (bottom) */
+    /* Margem: Esquerda (left), direita (right) */
+    margin-top: 10px;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0, 0.8);
+}
+
+header a {
+    margin-top: 20px;
+    padding: 10px 20px;
+    /* superior, inferior, esquerdo, direito */
+    /* padding: 10px 20px 10px 20px */
+    font-size: 1, 5rem;
+    /* cor de fundo */
+    background-color: #007bff;
+    /* cor do texto #fff */
+    color: white;
+    /* bordas */
+    border: none;
+    /* border: 10px solid red; */
+    /* border-style: dotted; */
+    /* border-color: red; */
+    /* border-width: 4px; */
+    /* arredondar bordas */
+    border-radius: 5px;
+    /* mudar cursor */
+    cursor: pointer;
+    /* sombra caixa */
+    box-shadow: 3px 3px 6px rgb(0, 0, 0, 0.4);
+}
+
+/* mudar a cor do elemento quando eu passo o mouse em cima dele tag:hover */
+header a:hover {
+    background-color: #0056b3
+}
+
+/* efeito no cabecalho */
+header::before {
+    content: "";
+    /* posiçãao do elemento: relativo, absoluto e fixado */
+    position: absolute;
+    /* zera a posição */
+    top: 0;
+    left: 0;
+    /* ocupar 100% do header */
+    width: 100%;
+    height: 100%;
+    /* destaque */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* profundidade */
+    z-index: -1;
+}
+
+/* uso configurações na tag para padronizar */
+/* posso usar classes para ajuste fino ou rescrever caracteristicas */
+
+.cabecalho-conteudo {
+    /* tamanho maximo do cabecalho */
+    max-width: 600px;
+}
+
+/* modificar tags que estão envoltas em uma determinada classe */
+.cabecalho-conteudo h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+.cabecalho-conteudo p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* configurando o botao */
+.btn-primary {
+    padding: 0.7rem 1.5rem;
+    background-color: #007bff;
+    /* formatação do texto */
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* serviços */
+.secao-servicos {
+    
+}
