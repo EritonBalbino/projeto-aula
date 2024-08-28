@@ -136,5 +136,133 @@ header::before {
 
 /* serviços */
 .secao-servicos {
-    
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+    /* alinhamento de texto */
+    text-align: center;
+}
+
+.secao-servicos h2 {
+    /* margem inferior */
+    margin-bottom: 1.5rem;
+}
+
+.lista-servicos {
+    /* orientação dos elementos do container */
+    /* controlar o layout */
+    /* block: ocupa todo espaço */
+    /* inline: ocupa o espaço necessario */
+    /* inline-block: permite definir altura e largura */
+    /* none: não renderiza o elemento */
+    /* flex: conteudo responsivo */
+    /* grid: linhas e colunas */
+    display: flex;
+    /* organizar com base no espaço */
+    /* space-between */
+    justify-content: space-around;
+    /* quando eu quero ou não, que os elementos formem uma nova linha */
+    /* nowrap: unica linha */
+    /* wrap: quebra a linha */
+    /* wrap-reverse: inverte a ordem */
+    flex-wrap: wrap;
+}
+
+.item-servico {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.secao-sobre {
+    padding: 2rem 1rem;
+    /* cor de fundo */
+    background-color: #007bff;
+    /* texto */
+    color: #fff;
+    /* alinhamento do texto */
+    text-align: center;
+}
+
+.secao-testemunhos {
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.lista-testemunhos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item-testemunho {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.item-testemunho span {
+    font-weight: 600;
+}
+
+.secao-contato {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.form-contato {
+    /* tamanho maximo */
+    max-width: 600px;
+    /* centralizar componentes */
+    margin: 0 auto;
+}
+
+/* agrupando css */
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-contato button {
+    padding: 0.7rem 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rodape {
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/* media queries */
+@media(max-width: 768px) {
+
+    .lista-servicos,
+    .lista-testemunhos {
+        /* direção da organização */
+        flex-direction: column;
+        /* alinhamento */
+        align-items: center;
+    }
+
+    .item-servico,
+    .item-testemunho {
+        width: 80%;
+    }
 }
