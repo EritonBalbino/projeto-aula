@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded',
             // pegar informação do input
             // let e const eu crio variaveis
             let tarefa = tarefaInput.value;
-            console.log(tarefa);
 
             // função que adiciona a tarefa na ul
             // addTarefa (tarefaInput.value);
@@ -35,6 +34,21 @@ document.addEventListener('DOMContentLoaded',
 
             // termina o listener do tarefaForm 
         });
+
+        // funções e metodos, são comportamentos de uma classe
+        // podem receber ou não parametros
+        // podem retornar ou não tipos de dados
+        // quando não retorna e conhecido por vazio (void)
+        function addTarefa(tarefa) {
+            console.log(tarefa);
+            // criar um elemento li
+            const li = document.createElement('li');
+            // cria um span
+            const span = document.createElement('span');
+            // definir o texto do span
+            span.textContent = tarefa;
+
+        }
 
         // so fecha no final do arquivo
     }
