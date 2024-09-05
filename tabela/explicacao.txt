@@ -1,0 +1,17 @@
+Padroes de projeto
+
+MVC
+Model: responsavel pelo modelo dados 
+
+View: responsavel pela visualizacao
+
+Controller: responsavel pelas regras de negocio
+
+DDD: Domain-Driven Design
+Model Repository Service Controller
+Produtos: eu vou ter tudo dentro desta pasta
+
+Clientes: eu vou ter tudo dentro desta pasta
+
+TDD: Teste-Driven Design
+Todo o projeto vai ser orientado pelo teste
